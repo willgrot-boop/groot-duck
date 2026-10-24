@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "robot_id": "diy-microduck-8dof",
+  "calibrated": false,
+  "bench_checks_passed": false,
+  "description": "Template only. Nulls intentionally block hardware commissioning; do not replace them with guessed pulse values.",
+  "joints": [
+    {
+      "name": "left_hip_pitch",
+      "channel": 0,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "left_knee",
+      "channel": 1,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "left_ankle_pitch",
+      "channel": 2,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "right_hip_pitch",
+      "channel": 3,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "right_knee",
+      "channel": 4,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "right_ankle_pitch",
+      "channel": 5,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "head_pan",
+      "channel": 6,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    },
+    {
+      "name": "head_tilt",
+      "channel": 7,
+      "calibrated": false,
+      "pwm_min_us": null,
+      "pwm_neutral_us": null,
+      "pwm_max_us": null,
+      "direction": null,
+      "neutral_deg": null,
+      "mechanical_min_deg": null,
+      "mechanical_max_deg": null
+    }
+  ]
+}

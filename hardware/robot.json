@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "robot_id": "diy-microduck-8dof",
+  "units": {
+    "angles": "deg",
+    "length": "mm"
+  },
+  "initial_dof": 8,
+  "default_backend": "simulation",
+  "hardware_output_enabled": false,
+  "balance_verified": false,
+  "description": "Eight-servo bench prototype configuration. Simulation limits are examples, not calibrated mechanics.",
+  "control": {
+    "serial_baud": 115200,
+    "watchdog_ms": 500,
+    "command_max_bytes": 512,
+    "tick_hz": 50,
+    "protocol_version": 1
+  },
+  "controllers": {
+    "pi": {
+      "model": "Raspberry Pi Zero 2 W",
+      "responsibilities": [
+        "camera",
+        "voice",
+        "wifi",
+        "cloud_ai",
+        "supervision"
+      ],
+      "uart_device_example": "/dev/serial0",
+      "uart_tx_bcm": 14,
+      "uart_rx_bcm": 15,
+      "uart_tx_header_pin": 8,
+      "uart_rx_header_pin": 10,
+      "logic_level_v": 3.3
+    },
+    "esp32": {
+      "board": "esp32dev",
+      "responsibilities": [
+        "local_motion_safety",
+        "servo_command_validation",
+        "imu_feedback"
+      ],
+      "uart_rx_gpio": 16,
+      "uart_tx_gpio": 17,
+      "i2c_sda_gpio": 21,
+      "i2c_scl_gpio": 22,
+      "servo_power_enable_gpio": 26,
+      "servo_power_enable_active_high": true,
+      "servo_power_enable_external_pulldown_required": true,
+      "pca9685_oe_gpio": 25,
+      "pca9685_oe_disable_high": true,
+      "pca9685_oe_external_pullup_v": 3.3,
+      "logic_level_v": 3.3
+    }
+  },
+  "devices": {
+    "pca9685": {
+      "i2c_address": 64,
+      "pwm_hz_target": 50,
+      "logic_v": 3.3,
+      "servo_v_plus_v": 5.0,
+      "status": "planned; no PWM writes in scaffold"
+    },
+    "mpu6050": {
+      "i2c_address": 104,
+      "logic_v": 3.3,
+      "feedback": "raw acceleration and gyro only; no balance controller"
+    }
+  },
+  "power": {
+    "logic_rail_v": 5.0,
+    "servo_rail_v": 5.0,
+    "servo_supply_current_a_candidate": 10,
+    "current_budget_verified": false,
+    "common_ground_required": true,
+    "physical_estop_cuts_servo_power": true,
+    "servo_power_from_pi_forbidden": true,
+    "battery_in_initial_budget": false
+  },
+  "joints": [
+    {
+      "name": "left_hip_pitch",
+      "channel": 0,
+      "role": "leg",
+      "simulation_limits_deg": [
+        -35,
+        35
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "left_knee",
+      "channel": 1,
+      "role": "leg",
+      "simulation_limits_deg": [
+        0,
+        75
+      ],
+      "simulation_neutral_deg": 20,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "left_ankle_pitch",
+      "channel": 2,
+      "role": "leg",
+      "simulation_limits_deg": [
+        -30,
+        30
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "right_hip_pitch",
+      "channel": 3,
+      "role": "leg",
+      "simulation_limits_deg": [
+        -35,
+        35
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "right_knee",
+      "channel": 4,
+      "role": "leg",
+      "simulation_limits_deg": [
+        0,
+        75
+      ],
+      "simulation_neutral_deg": 20,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "right_ankle_pitch",
+      "channel": 5,
+      "role": "leg",
+      "simulation_limits_deg": [
+        -30,
+        30
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "head_pan",
+      "channel": 6,
+      "role": "head",
+      "simulation_limits_deg": [
+        -60,
+        60
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    },
+    {
+      "name": "head_tilt",
+      "channel": 7,
+      "role": "head",
+      "simulation_limits_deg": [
+        -25,
+        25
+      ],
+      "simulation_neutral_deg": 0,
+      "max_velocity_deg_s": 60,
+      "hardware_calibrated": false
+    }
+  ]
+}

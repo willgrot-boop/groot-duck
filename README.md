@@ -1,98 +1,129 @@
-# MicroDuck CAD model
+# DIY Microduck-inspired biped prototype
 
-A solid CAD interpretation of Pollen Robotics' MicroDuck, plus a separate,
-faithful mesh assembly from the official robot assets.
+A simulation-first **eight-servo** robot scaffold with a target **$200 hardware
+budget**. Raspberry Pi Zero 2 W is the planned camera, voice, Wi-Fi and optional
+cloud-AI host. An ESP32 owns local motion safeguards and IMU feedback.
 
-![Parametric CAD preview](exports/microduck_preview.png)
+**This robot has not demonstrated balance or walking.** The Python demo only
+interpolates joint angles. The ESP32 firmware deliberately has no motor-output
+backend: it boots with servo power inhibited and PCA9685 PWM outputs disabled;
+UART cannot arm it. No servos were connected, calibrated, flashed or actuated
+during this work.
 
-## Open the model
+## Quick start: no hardware or credentials
 
-- **[microduck.step](exports/microduck.step)** — colored, named, 71-part solid
-  assembly for FreeCAD, Fusion, Onshape, SolidWorks and other STEP-capable CAD.
-- **[microduck.glb](exports/microduck.glb)** — colored 3D model for viewers and Blender.
-- **[microduck.stl](exports/microduck.stl)** — assembled layout in millimeters.
-- **[Individual part STLs](exports/parts/)** — separate closed solid meshes for
-  print preparation or further modification.
-- **[Parametric source](cad/microduck.py)** — editable CadQuery dimensions and geometry.
-- **[Exact official mesh assembly](reference/microduck-reference-assembly.glb)** —
-  a higher-detail visual reference, assembled from Pollen Robotics' original meshes.
-
-The editable concept is approximately **274 mm tall × 135 mm wide × 122 mm
-deep**. Its arched ivory head, single yellow-ringed camera, orange lower jaw,
-exposed neck, articulated-looking legs and orange boots follow the reference.
-The head and torso are hollow; joint straps have through-holes, and hardware,
-camera, servos and body panels are separate solid parts.
-
-This is a **visual CAD concept**. Servo envelopes and fasteners are simplified;
-the assembly has no motion constraints, and dimensions, clearances and hardware
-fits have not been validated for a working robot. The assembly STL contains
-overlapping separate bodies. It is not a single watertight printable object.
-Use the individual STLs to orient parts, add supports and prepare a print;
-they do not include an engineered mounting or assembly system.
-
-## Edit and regenerate
-
-Python 3.12 and CadQuery 2.7.0 were used. Blender 4.3.2 was used for rendering.
-From the existing checkout at `/workspace/groot-duck`:
+Requires Python 3.10+; run from the repository root. The host package has no
+third-party runtime dependencies. Existing CAD tools are optional and separate.
 
 ```bash
-python -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python cad/microduck.py
+python3 -m venv .venv
+.venv/bin/python -m pip install -e .
+.venv/bin/python -m microduck check-config
+.venv/bin/python -m microduck simulate --duration 1
+.venv/bin/python -m unittest discover -s tests -v
+bash firmware/test_native.sh
 ```
 
-If CadQuery is already installed, simply run `python cad/microduck.py`.
-Edit `Parameters` in `cad/microduck.py` to change the head, shell thickness,
-torso, feet or camera surround. All design dimensions are in millimeters;
-axes are +X forward, +Y left and +Z up. STEP and STL retain millimeters; GLB
-uses the standard glTF meter units and +Y up.
+The last command requires a C++17 `g++` compiler. On Windows, activate the venv
+and use `python` in place of `.venv/bin/python`; use WSL for the native shell test.
 
-To make a half-size copy without replacing the main exports:
+Simulation emits JSON lines with `simulated: true` and `imu_valid: false`.
+`state: "armed"` in these records refers only to the software simulator. Time is
+virtual by default; `--realtime` paces the demo on the host clock. The small head
+scan is a software demonstration, not a gait or a physics simulation. Config
+paths are relative to the working directory; use `--config /path/to/robot.json`
+before the subcommand when running elsewhere.
 
 ```bash
-python cad/microduck.py --scale 0.5 --output exports/half-size
+.venv/bin/python -m microduck protocol-status
 ```
 
-Export creates STEP, STL, GLB, per-part STLs and a manifest with dimensions,
-volumes and part names. Re-render after geometry changes:
+This prints a protocol status request. It does not open a serial port. There is
+no real-motor transport or hardware-arm CLI. Missing hardware and network access
+do not prevent host tests or joint simulation.
 
-```bash
-blender --background --python scripts/render_model.py -- --views all
-```
+## Repository layout
 
-Validate the actual exported STEP and STL files:
+| Path | Purpose |
+|---|---|
+| `src/microduck/` | Validated configuration, bounded motion interface, simulated backend, protocol codec and Pi service boundaries |
+| `firmware/` | ESP32 UART and raw MPU6050 sampling, portable safety core and native tests; motor outputs inhibited |
+| `hardware/robot.json` | Eight-joint map, example simulation limits, pin assignments and power assumptions |
+| `hardware/calibration.example.json` | Uncalibrated template: false approvals and null measurements |
+| `hardware/bom.csv` | Itemized $200 bench-prototype estimate |
+| `tests/` | Host safety, motion, protocol, configuration, budget and CLI tests |
+| `docs/` | Architecture, wiring, commissioning gates, roadmap and prior CAD documentation |
+| `cad/`, `exports/`, `reference/` | Preserved visual CAD, exports and attributed official mesh references |
+| `.github/workflows/prototype.yml` | Python, native safety/protocol tests and ESP32 build jobs on push/PR |
 
-```bash
-python scripts/validate_model.py
-```
+## Hardware design and budget
 
-The validation report is saved in `exports/validation.json`. Rendered views
-are in `exports/microduck_preview.png`, `exports/microduck_front.png` and
-`exports/microduck_side.png`. `exports/microduck_studio.blend` contains the
-colored concept assembly and its presentation scene.
+| PCA9685 channel | Joint |
+|---|---|
+| 0 / 3 | Left / right hip pitch |
+| 1 / 4 | Left / right knee |
+| 2 / 5 | Left / right ankle pitch |
+| 6 / 7 | Head pan / tilt |
 
-## Reference and attribution
+This gives three pitch joints per leg and two head joints. It has no hip-roll
+or ankle-roll joints, so lateral balance authority is limited. Eight servos
+are a starting design, not evidence that a free-standing biped is feasible.
 
-Original MicroDuck design and source meshes: **Pollen Robotics**.
-The separate [reference package](reference/README.md) records source commits,
-licenses, the original Onshape link and a reproducible assembly script.
+The [BOM](hardware/bom.csv) totals **$200**, including eight candidate MG90S-class
+servos, Pi/camera/audio, ESP32, IMU, PWM board, separate logic and servo supplies,
+power gate, wiring/fuses, a physical stop, printing and a $5 contingency.
+Prices are planning estimates, not quotes. Tax, shipping, tools, battery power
+and cloud-service charges are excluded. Servo quality, torque, continuous-load
+capability and actual stall current must be checked before purchase/assembly;
+a smaller/lighter mechanism or a revised budget may be necessary.
 
-- Product: <https://pollen-robotics.com/microduck>
-- Official robot: <https://github.com/pollen-robotics/microduck>
-- Official geometry: <https://github.com/pollen-robotics/microduck_rl>
-- [Original Onshape CAD document](https://cad.onshape.com/documents/804927696f06d877f3f1803e/w/5b75db19292e71970de02dee/e/ef6e972847fec8d82570b35e)
+The existing ~274 mm CAD model is a **visual reference** and has not been
+regenerated or adapted to eight low-cost servos. Do not print it expecting
+working mounts, link lengths, suitable mass or calibrated joints.
+See [the CAD documentation](docs/cad-model.md) and [hardware notes](hardware/README.md).
 
-The original mesh models and adapted geometry/renderings are licensed under
-**[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
-This CAD concept is an adaptation recreated using solid primitives, elliptical
-profiles, shell cuts and joint straps; it is not an export of the original
-feature history. The reference assembly uses the unchanged official meshes,
-posed and converted to export formats. See [LICENSE-MODEL.md](LICENSE-MODEL.md)
-and the retained upstream [model license](reference/LICENSE-MODELS.md).
+## Control boundaries
 
-The exact mesh reference is 271.616 mm tall in its standing pose. That differs
-from this simplified CAD concept and the official approximate 25 cm product
-description. The original Onshape document was linked but not exported.
+- **Pi:** future camera, microphone/speech, speaker and cloud adapters. The
+  package currently defines interfaces and a small action allowlist; those
+  integrations are not implemented or hardware-tested. Cloud proposals cannot
+  arm firmware or send arbitrary servo pulses. No API keys are required now.
+- **ESP32:** JSON-lines UART at 115200 baud; bounded parsing, command validation,
+  latched faults/stops, 500 ms watchdog core, and raw MPU6050 acceleration/gyro
+  feedback. No balance estimation/controller is included. Real sampling code
+  exists, but physical sensor operation is unverified.
+- **Power:** Pi and ESP32 logic use a separate regulated rail from the servos.
+  Grounds are shared; never draw servo current through the Pi. External OE
+  pullup and power-gate pulldown keep motors off during reset. A physical
+  latching stop cuts servo power independently of software.
 
-The two GitHub URLs in the request were truncated/combined, so no unidentified
-repositories were used; the complete Pollen Robotics link identified the robot.
+Firmware build and protocol instructions are in [firmware/README.md](firmware/README.md).
+Build only—do not flash or wire powered servos as part of the quick start.
+Physical calibration, measured limits, current/power checks, mechanical support
+and an independently proven stop are prerequisites for a future motor backend.
+Changing a JSON flag does not enable motors.
+
+Local Python and native firmware checks passed. The ESP32 target build was
+attempted but its PlatformIO dependency downloads were blocked by the cloud
+network proxy (HTTP 403); that build and all physical hardware remain
+unverified. See [validation notes](docs/validation.md) for exact scope and the
+command to retry once registry access is available. Defined CI jobs are not
+evidence that a remote CI run has passed.
+
+## Next development steps
+
+1. Prove torque, mass and mounting feasibility with actual servo samples.
+2. Validate UART, IMU and electrical stop behavior on a logic-only bench.
+3. Implement and test a commissioned output backend with measured calibration
+   and local authorization; then test one unloaded joint under supervision.
+4. Assemble a supported robot and verify fault/current/thermal behavior.
+5. Add measured Pi camera/audio/cloud integrations; investigate balance only
+   after a suitable mechanical and contact model exists.
+
+See the acceptance criteria in the [roadmap](docs/roadmap.md),
+[architecture](docs/architecture.md), [wiring](docs/wiring.md), and
+[commissioning checklist](docs/commissioning.md).
+
+The CAD archives remain the original CAD deliverables, not archives of this
+new software scaffold. Model attribution and CC BY-NC-SA 4.0 terms remain in
+[LICENSE-MODEL.md](LICENSE-MODEL.md) and `reference/`.

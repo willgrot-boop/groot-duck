@@ -1,0 +1,19 @@
+id,item,quantity,unit_usd,subtotal_usd,notes
+pi_zero_2_w,Raspberry Pi Zero 2 W,1,20.00,20.00,Target price; availability varies
+camera,Pi-compatible CSI camera,1,15.00,15.00,Verify Zero 2 W driver support
+camera_cable,Pi Zero narrow CSI adapter cable,1,4.00,4.00,Different connector width from standard Pi
+microsd,16-32 GB microSD card,1,8.00,8.00,OS storage
+esp32,Classic ESP32 DevKit ESP32-WROOM board,1,8.00,8.00,esp32dev target; not ESP32-C3/S3 pinout
+imu,MPU6050 breakout,1,4.00,4.00,Verify 3.3 V logic and pullups
+servo_pwm,PCA9685 breakout,1,7.00,7.00,OE pin must be accessible
+servo,Candidate MG90S metal-gear micro servo,8,5.00,40.00,Torque and stall current unverified; variable quality
+logic_supply,Regulated 5 V logic supply and Pi USB lead,1,8.00,8.00,Adequate for Pi peripherals and ESP32; verify voltage
+servo_supply,Regulated 5 V 8-10 A bench servo supply,1,16.00,16.00,Current rating provisional until stall measurements
+servo_gate,3.3 V controlled high-side servo rail gate,1,8.00,8.00,Rated for measured peak current; default off
+power_wiring,Fuses holders connectors heavier power wire,1,12.00,12.00,No breadboard servo current
+estop,Latching emergency stop and power-rated disconnect,1,10.00,10.00,Cuts servo rail independently of firmware
+printing,Lightweight printed parts or print-service allowance,1,12.00,12.00,Requires mechanical redesign; existing CAD is reference
+fasteners,Fasteners horns bearings or bushings allowance,1,8.00,8.00,Check actual servo horn and mounting fits
+microphone,USB microphone,1,7.00,7.00,Pi Zero OTG adapter included in audio allowance
+audio_output,Small speaker amplifier and OTG/audio adapters,1,8.00,8.00,Verify output interface and USB power budget
+contingency,Small component contingency,1,5.00,5.00,Not sufficient for major servo upgrades

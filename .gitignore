@@ -1,4 +1,13 @@
 __pycache__/
 .venv/
+.venv-firmware/
 .cache/
 *.blend1
+*.egg-info/
+firmware/.pio/
+hardware/calibration.local.json
+.env
+.env.*
+logs/
+build/
+dist/
