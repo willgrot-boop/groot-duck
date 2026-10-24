@@ -1,0 +1,26 @@
+{
+  "parts": 70,
+  "triangles": 796844,
+  "bounds_mm": [
+    [
+      -47.501006182806755,
+      -71.02830775514522,
+      3.1086244689504383e-15
+    ],
+    [
+      75.18901208363259,
+      71.02830775514522,
+      271.61601504490204
+    ]
+  ],
+  "dimensions_mm": [
+    122.69001826643934,
+    142.0566155102904,
+    271.61601504490204
+  ],
+  "ground_offset_mm": -2.81800047234243,
+  "source": "https://github.com/pollen-robotics/microduck_rl",
+  "source_commit": "b02fdea4902c2b93b7d34a83a6f05da4ececb7d3",
+  "license": "CC-BY-NC-SA-4.0 (STL models); Apache-2.0 (code and MJCF)",
+  "note": "Assembly contains separate overlapping meshes, not a single printable manifold."
+}

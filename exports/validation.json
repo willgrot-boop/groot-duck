@@ -1,0 +1,1996 @@
+{
+  "checked_at_utc": "2026-10-24T02:10:42.038669+00:00",
+  "status": "passed",
+  "failures": [],
+  "source_file_sha256": {
+    "manifest.json": "0538685bb352a59e455f601abcf517863b1c8e224f76dc98f00be0c1a7aa0137",
+    "microduck.step": "e7cafc73703ca68b50d9aa5cb46246ef0dc743a2c3a8e6fd2ab9052114ab89b0",
+    "microduck.stl": "966cd3324fe12c27d6e49c9e79255274817bfdf0e4ff36fa82034b3404b630f4",
+    "microduck.glb": "1b770ae4c9c8ad2a804fccab55e4c8309f5f8c23c2b09c9ba24cb9dcf0ee61fa"
+  },
+  "step": {
+    "round_trip_import_passed": true,
+    "solid_count": 71,
+    "all_solids_valid": true,
+    "all_solids_positive_volume": true,
+    "volume_mm3": 569646.7296307975,
+    "bounds_mm": [
+      [
+        -47.0000001,
+        -67.5,
+        -4.440892098501e-16
+      ],
+      [
+        75.0000001,
+        67.5,
+        274.0000001
+      ]
+    ],
+    "dimensions_mm": [
+      122.00000019999999,
+      135.0,
+      274.0000001
+    ]
+  },
+  "glb": {
+    "valid_structure": true,
+    "mesh_node_count": 71,
+    "triangle_count": 202572,
+    "standard_meter_units": true,
+    "bounds_mm": [
+      [
+        -47.0,
+        -67.50000000000001,
+        -1.3367085385893474e-14
+      ],
+      [
+        75.0,
+        67.49999999999997,
+        273.9959106445312
+      ]
+    ]
+  },
+  "assembled_stl": {
+    "units": "mm",
+    "triangles": 202376,
+    "bounds_mm": [
+      [
+        -47.0,
+        -67.5,
+        0.0
+      ],
+      [
+        75.0,
+        67.5,
+        273.99591064453125
+      ]
+    ],
+    "interpretation": "Separate overlapping closed solids, not a single printable manifold"
+  },
+  "individual_stl_summary": {
+    "count": 71,
+    "all_watertight_after_ignoring_degenerate_triangles": true,
+    "degenerate_triangle_count": 0,
+    "all_positive_oriented_volume": true
+  },
+  "parts": [
+    {
+      "triangle_count": 504,
+      "merged_vertex_count": 254,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 54865.94879470641,
+      "bounds_mm": [
+        [
+          -47.0,
+          -46.0,
+          231.0
+        ],
+        [
+          75.0,
+          46.0,
+          273.99591064453125
+        ]
+      ],
+      "name": "head_arched_hood",
+      "volume_relative_error_vs_cad": 0.0010126842392095443
+    },
+    {
+      "triangle_count": 280,
+      "merged_vertex_count": 142,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 7808.158628339074,
+      "bounds_mm": [
+        [
+          60.0,
+          -42.5,
+          231.0
+        ],
+        [
+          63.0,
+          42.5,
+          269.9991455078125
+        ]
+      ],
+      "name": "head_face_insert",
+      "volume_relative_error_vs_cad": 0.00033624938606369815
+    },
+    {
+      "triangle_count": 10196,
+      "merged_vertex_count": 5100,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 69109.70902274844,
+      "bounds_mm": [
+        [
+          -47.0,
+          -46.0,
+          215.0
+        ],
+        [
+          71.0,
+          46.0,
+          231.0
+        ]
+      ],
+      "name": "orange_lower_jaw",
+      "volume_relative_error_vs_cad": 0.00011344408549722606
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 305.3482639314837,
+      "bounds_mm": [
+        [
+          70.5,
+          -41.5,
+          230.3000030517578
+        ],
+        [
+          72.5,
+          41.5,
+          232.3000030517578
+        ]
+      ],
+      "name": "mouth_dark_seam",
+      "volume_relative_error_vs_cad": 0.0001824994712456163
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 562.9203371403406,
+      "bounds_mm": [
+        [
+          70.4000015258789,
+          -42.5,
+          231.89999389648438
+        ],
+        [
+          73.4000015258789,
+          42.5,
+          234.3000030517578
+        ]
+      ],
+      "name": "mouth_upper_lip",
+      "volume_relative_error_vs_cad": 0.00018056640710208008
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 3616.954567642179,
+      "bounds_mm": [
+        [
+          64.0,
+          -14.998321533203125,
+          234.0067138671875
+        ],
+        [
+          72.0,
+          14.998321533203125,
+          264.0
+        ]
+      ],
+      "name": "single_yellow_camera_bezel",
+      "volume_relative_error_vs_cad": 0.0005969504582807702
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2336.1503185579177,
+      "bounds_mm": [
+        [
+          63.0,
+          -8.84900951385498,
+          240.15396118164062
+        ],
+        [
+          72.5,
+          8.84900951385498,
+          257.8500061035156
+        ]
+      ],
+      "name": "camera_black_barrel",
+      "volume_relative_error_vs_cad": 0.0005966436761997742
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 120.35113383917547,
+      "bounds_mm": [
+        [
+          72.5,
+          -7.399171829223633,
+          241.6033172607422
+        ],
+        [
+          73.19999694824219,
+          7.399171829223633,
+          256.3999938964844
+        ]
+      ],
+      "name": "camera_glass",
+      "volume_relative_error_vs_cad": 0.0006050800573351806
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 1077.3958313980027,
+      "bounds_mm": [
+        [
+          -15.999427795410156,
+          -46.0,
+          219.00099182128906
+        ],
+        [
+          6.999427318572998,
+          -43.0,
+          245.99900817871094
+        ]
+      ],
+      "name": "jaw_pivot_tab_right",
+      "volume_relative_error_vs_cad": 0.00022472166163151633
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 35.32183277809963,
+      "bounds_mm": [
+        [
+          -10.499832153320312,
+          -47.0,
+          237.50067138671875
+        ],
+        [
+          -7.5001678466796875,
+          -42.0,
+          240.5
+        ]
+      ],
+      "name": "jaw_pivot_pin_right",
+      "volume_relative_error_vs_cad": 0.0005989084656189411
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 1077.3958313980022,
+      "bounds_mm": [
+        [
+          -15.999427795410156,
+          43.0,
+          219.00099182128906
+        ],
+        [
+          6.999427318572998,
+          46.0,
+          245.99900817871094
+        ]
+      ],
+      "name": "jaw_pivot_tab_left",
+      "volume_relative_error_vs_cad": 0.0002247216616319383
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 35.32183277809963,
+      "bounds_mm": [
+        [
+          -10.499832153320312,
+          42.0,
+          237.50067138671875
+        ],
+        [
+          -7.5001678466796875,
+          47.0,
+          240.5
+        ]
+      ],
+      "name": "jaw_pivot_pin_left",
+      "volume_relative_error_vs_cad": 0.0005989084656189411
+    },
+    {
+      "triangle_count": 7732,
+      "merged_vertex_count": 3868,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 23720.822029840074,
+      "bounds_mm": [
+        [
+          -46.0,
+          0.30000001192092896,
+          120.0
+        ],
+        [
+          34.0,
+          32.0,
+          162.0
+        ]
+      ],
+      "name": "torso_shell_left",
+      "volume_relative_error_vs_cad": 0.00041035568313295173
+    },
+    {
+      "triangle_count": 7732,
+      "merged_vertex_count": 3868,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 23720.822275572787,
+      "bounds_mm": [
+        [
+          -46.0,
+          -32.0,
+          120.0
+        ],
+        [
+          34.0,
+          -0.30000001192092896,
+          162.0
+        ]
+      ],
+      "name": "torso_shell_right",
+      "volume_relative_error_vs_cad": 0.000410345328016441
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 14460.965452970937,
+      "bounds_mm": [
+        [
+          -31.0,
+          -16.5,
+          118.0
+        ],
+        [
+          25.0,
+          16.5,
+          126.0
+        ]
+      ],
+      "name": "torso_inner_frame",
+      "volume_relative_error_vs_cad": 4.747362397208488e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 52526.721158067965,
+      "bounds_mm": [
+        [
+          -46.5,
+          -19.0,
+          79.5
+        ],
+        [
+          -25.5,
+          19.0,
+          146.5
+        ]
+      ],
+      "name": "rear_battery_pack",
+      "volume_relative_error_vs_cad": 3.8147545595929424e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 21.70167521188975,
+      "bounds_mm": [
+        [
+          -34.39892578125,
+          -24.399730682373047,
+          159.8000030517578
+        ],
+        [
+          -29.600000381469727,
+          -19.600269317626953,
+          161.0
+        ]
+      ],
+      "name": "torso_screw_-32_-22",
+      "volume_relative_error_vs_cad": 0.0006136213727952955
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 21.701675281305743,
+      "bounds_mm": [
+        [
+          16.60107421875,
+          -24.399730682373047,
+          159.8000030517578
+        ],
+        [
+          21.399999618530273,
+          -19.600269317626953,
+          161.0
+        ]
+      ],
+      "name": "torso_screw_19_-22",
+      "volume_relative_error_vs_cad": 0.0006136181761113004
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 21.701675211888954,
+      "bounds_mm": [
+        [
+          -34.39892578125,
+          19.600269317626953,
+          159.8000030517578
+        ],
+        [
+          -29.600000381469727,
+          24.399730682373047,
+          161.0
+        ]
+      ],
+      "name": "torso_screw_-32_22",
+      "volume_relative_error_vs_cad": 0.0006136213728319433
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 21.701675281305842,
+      "bounds_mm": [
+        [
+          16.60107421875,
+          19.600269317626953,
+          159.8000030517578
+        ],
+        [
+          21.399999618530273,
+          24.399730682373047,
+          161.0
+        ]
+      ],
+      "name": "torso_screw_19_22",
+      "volume_relative_error_vs_cad": 0.0006136181761067194
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2351.7117232166233,
+      "bounds_mm": [
+        [
+          2.000009536743164,
+          -14.5,
+          149.00274658203125
+        ],
+        [
+          32.9999885559082,
+          -11.5,
+          208.99725341796875
+        ]
+      ],
+      "name": "neck_link_right",
+      "volume_relative_error_vs_cad": 7.240022389589322e-05
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2351.7117232166233,
+      "bounds_mm": [
+        [
+          2.000009536743164,
+          11.5,
+          149.00274658203125
+        ],
+        [
+          32.9999885559082,
+          14.5,
+          208.99725341796875
+        ]
+      ],
+      "name": "neck_link_left",
+      "volume_relative_error_vs_cad": 7.240022389589322e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 16057.430147028199,
+      "bounds_mm": [
+        [
+          11.5,
+          -12.0,
+          146.5
+        ],
+        [
+          36.5,
+          12.0,
+          173.5
+        ]
+      ],
+      "name": "neck_lower_servo",
+      "volume_relative_error_vs_cad": 1.879798291571027e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 14861.300926354996,
+      "bounds_mm": [
+        [
+          -3.5,
+          -12.0,
+          186.5
+        ],
+        [
+          21.5,
+          12.0,
+          211.5
+        ]
+      ],
+      "name": "neck_upper_servo",
+      "volume_relative_error_vs_cad": 1.97874888263113e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 3775.4267375428476,
+      "bounds_mm": [
+        [
+          9.0,
+          -15.0,
+          176.0
+        ],
+        [
+          25.0,
+          15.0,
+          184.0
+        ]
+      ],
+      "name": "neck_center_brace",
+      "volume_relative_error_vs_cad": 3.6355484148129e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963391568381,
+      "bounds_mm": [
+        [
+          23.000335693359375,
+          -16.5,
+          153.0013427734375
+        ],
+        [
+          28.999664306640625,
+          16.5,
+          159.0
+        ]
+      ],
+      "name": "neck_axle_0",
+      "volume_relative_error_vs_cad": 0.0005966015254888217
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 714.2858614553188,
+      "bounds_mm": [
+        [
+          16.00111961364746,
+          -15.25,
+          146.0044708251953
+        ],
+        [
+          35.99888229370117,
+          -12.75,
+          166.0
+        ]
+      ],
+      "name": "neck_horn_0_-1",
+      "volume_relative_error_vs_cad": 0.0005962381276390771
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 714.2858614553188,
+      "bounds_mm": [
+        [
+          16.00111961364746,
+          12.75,
+          146.0044708251953
+        ],
+        [
+          35.99888229370117,
+          15.25,
+          166.0
+        ]
+      ],
+      "name": "neck_horn_0_1",
+      "volume_relative_error_vs_cad": 0.0005962381276390771
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963380130957,
+      "bounds_mm": [
+        [
+          6.000335693359375,
+          -16.5,
+          199.0013427734375
+        ],
+        [
+          11.999664306640625,
+          16.5,
+          205.0
+        ]
+      ],
+      "name": "neck_axle_1",
+      "volume_relative_error_vs_cad": 0.0005966027512952209
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 714.2858611697693,
+      "bounds_mm": [
+        [
+          -0.9988810420036316,
+          -15.25,
+          192.0044708251953
+        ],
+        [
+          18.99888038635254,
+          -12.75,
+          212.0
+        ]
+      ],
+      "name": "neck_horn_1_-1",
+      "volume_relative_error_vs_cad": 0.0005962385271699427
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 714.2858611697693,
+      "bounds_mm": [
+        [
+          -0.9988810420036316,
+          12.75,
+          192.0044708251953
+        ],
+        [
+          18.99888038635254,
+          15.25,
+          212.0
+        ]
+      ],
+      "name": "neck_horn_1_1",
+      "volume_relative_error_vs_cad": 0.0005962385271699427
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 11238.7681639058,
+      "bounds_mm": [
+        [
+          -6.0,
+          -15.0,
+          207.0
+        ],
+        [
+          22.0,
+          15.0,
+          221.0
+        ]
+      ],
+      "name": "head_yaw_gimbal",
+      "volume_relative_error_vs_cad": 0.00010167661418323527
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 5365.033004295331,
+      "bounds_mm": [
+        [
+          -11.5,
+          -18.0,
+          215.0
+        ],
+        [
+          27.5,
+          18.0,
+          219.0
+        ]
+      ],
+      "name": "head_mount_plate",
+      "volume_relative_error_vs_cad": 9.989540804887673e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 17292.339332744563,
+      "bounds_mm": [
+        [
+          -10.5,
+          -40.5,
+          100.0
+        ],
+        [
+          16.5,
+          -15.5,
+          126.0
+        ]
+      ],
+      "name": "hip_yaw_servo_right",
+      "volume_relative_error_vs_cad": 3.190138973505175e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 18527.457922611644,
+      "bounds_mm": [
+        [
+          -10.5,
+          -60.0,
+          93.5
+        ],
+        [
+          16.5,
+          -36.0,
+          122.5
+        ]
+      ],
+      "name": "hip_outer_servo_right",
+      "volume_relative_error_vs_cad": 3.055249649705608e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2511.774475970939,
+      "bounds_mm": [
+        [
+          -1.9994405508041382,
+          -54.0,
+          104.00223541259766
+        ],
+        [
+          7.999440670013428,
+          -22.0,
+          114.0
+        ]
+      ],
+      "name": "hip_cross_axle_right",
+      "volume_relative_error_vs_cad": 0.000596641682944606
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 9243.529804543452,
+      "bounds_mm": [
+        [
+          -34.998390197753906,
+          -66.0,
+          57.00105667114258
+        ],
+        [
+          14.998390197753906,
+          -60.0,
+          120.99894714355469
+        ]
+      ],
+      "name": "thigh_outer_plate_right",
+      "volume_relative_error_vs_cad": 0.00014994137929942082
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 3342.830622617177,
+      "bounds_mm": [
+        [
+          -30.498994827270508,
+          -43.0,
+          61.50065994262695
+        ],
+        [
+          10.498993873596191,
+          -39.0,
+          116.49934387207031
+        ]
+      ],
+      "name": "thigh_inner_plate_right",
+      "volume_relative_error_vs_cad": 8.356810958149326e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 14042.543118902986,
+      "bounds_mm": [
+        [
+          -36.5,
+          -62.5,
+          57.5
+        ],
+        [
+          -9.5,
+          -39.5,
+          80.5
+        ]
+      ],
+      "name": "knee_servo_right",
+      "volume_relative_error_vs_cad": 3.673566400407023e-05
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2320.598932022778,
+      "bounds_mm": [
+        [
+          -28.498361587524414,
+          -46.0,
+          20.50007438659668
+        ],
+        [
+          6.498362064361572,
+          -42.0,
+          74.49992370605469
+        ]
+      ],
+      "name": "shin_outer_link_right",
+      "volume_relative_error_vs_cad": 3.7949097496442355e-05
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2320.598932022786,
+      "bounds_mm": [
+        [
+          -28.498361587524414,
+          -34.0,
+          20.50007438659668
+        ],
+        [
+          6.498362064361572,
+          -30.0,
+          74.49992370605469
+        ]
+      ],
+      "name": "shin_inner_link_right",
+      "volume_relative_error_vs_cad": 3.7949097493111144e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 15949.221005748068,
+      "bounds_mm": [
+        [
+          -11.0,
+          -55.0,
+          15.5
+        ],
+        [
+          13.0,
+          -30.0,
+          42.5
+        ]
+      ],
+      "name": "ankle_servo_right",
+      "volume_relative_error_vs_cad": 3.3667862041035425e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963380552919,
+      "bounds_mm": [
+        [
+          0.0003356945817358792,
+          -67.5,
+          106.0013427734375
+        ],
+        [
+          5.999664306640625,
+          -34.5,
+          112.0
+        ]
+      ],
+      "name": "joint_axle_right_0",
+      "volume_relative_error_vs_cad": 0.0005966027060715087
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.6799163288033,
+      "bounds_mm": [
+        [
+          -5.499048709869385,
+          -67.25,
+          100.5038070678711
+        ],
+        [
+          11.499049186706543,
+          -64.75,
+          117.5
+        ]
+      ],
+      "name": "joint_bearing_right_0",
+      "volume_relative_error_vs_cad": 0.0005957312112589751
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963282022218,
+      "bounds_mm": [
+        [
+          -25.999664306640625,
+          -67.5,
+          66.0013427734375
+        ],
+        [
+          -20.000335693359375,
+          -34.5,
+          72.0
+        ]
+      ],
+      "name": "joint_axle_right_1",
+      "volume_relative_error_vs_cad": 0.0005966132661040925
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.6798932150717,
+      "bounds_mm": [
+        [
+          -31.499048233032227,
+          -67.25,
+          60.50380325317383
+        ],
+        [
+          -14.500950813293457,
+          -64.75,
+          77.5
+        ]
+      ],
+      "name": "joint_bearing_right_1",
+      "volume_relative_error_vs_cad": 0.0005957781929665669
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4962186812501,
+      "bounds_mm": [
+        [
+          -1.999664306640625,
+          -59.0,
+          23.0013427734375
+        ],
+        [
+          3.999664306640625,
+          -26.0,
+          29.0
+        ]
+      ],
+      "name": "joint_axle_right_2",
+      "volume_relative_error_vs_cad": 0.0005967306452580152
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.67984392519065,
+      "bounds_mm": [
+        [
+          -7.499048709869385,
+          -56.25,
+          17.50380516052246
+        ],
+        [
+          9.499049186706543,
+          -53.75,
+          34.5
+        ]
+      ],
+      "name": "joint_bearing_right_2",
+      "volume_relative_error_vs_cad": 0.0005958783811496977
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 10365.812422304647,
+      "bounds_mm": [
+        [
+          -20.0,
+          -62.5,
+          0.0
+        ],
+        [
+          34.0,
+          -22.5,
+          5.0
+        ]
+      ],
+      "name": "foot_sole_right",
+      "volume_relative_error_vs_cad": 8.928340769799825e-05
+    },
+    {
+      "triangle_count": 8224,
+      "merged_vertex_count": 4106,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 26454.034997699546,
+      "bounds_mm": [
+        [
+          -20.0,
+          -62.5,
+          4.0
+        ],
+        [
+          34.0,
+          -22.5,
+          34.998722076416016
+        ]
+      ],
+      "name": "orange_foot_right",
+      "volume_relative_error_vs_cad": 0.00015178753342238598
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 11.334381551038016,
+      "bounds_mm": [
+        [
+          22.10085105895996,
+          -55.39978790283203,
+          15.399999618530273
+        ],
+        [
+          25.899999618530273,
+          -51.60021209716797,
+          16.399999618530273
+        ]
+      ],
+      "name": "foot_deck_screw_right_-53",
+      "volume_relative_error_vs_cad": 0.000583586011990442
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 11.334382164992325,
+      "bounds_mm": [
+        [
+          22.10085105895996,
+          -33.39978790283203,
+          15.399999618530273
+        ],
+        [
+          25.899999618530273,
+          -29.60021209716797,
+          16.399999618530273
+        ]
+      ],
+      "name": "foot_deck_screw_right_-31",
+      "volume_relative_error_vs_cad": 0.000583531876172647
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 17292.339331416708,
+      "bounds_mm": [
+        [
+          -10.5,
+          15.5,
+          100.0
+        ],
+        [
+          16.5,
+          40.5,
+          126.0
+        ]
+      ],
+      "name": "hip_yaw_servo_left",
+      "volume_relative_error_vs_cad": 3.190146652122872e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 18527.457922611637,
+      "bounds_mm": [
+        [
+          -10.5,
+          36.0,
+          93.5
+        ],
+        [
+          16.5,
+          60.0,
+          122.5
+        ]
+      ],
+      "name": "hip_outer_servo_left",
+      "volume_relative_error_vs_cad": 3.055249649744879e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2511.774475970939,
+      "bounds_mm": [
+        [
+          -1.9994405508041382,
+          22.0,
+          104.00223541259766
+        ],
+        [
+          7.999440670013428,
+          54.0,
+          114.0
+        ]
+      ],
+      "name": "hip_cross_axle_left",
+      "volume_relative_error_vs_cad": 0.000596641682944606
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 9243.529804543448,
+      "bounds_mm": [
+        [
+          -34.998390197753906,
+          60.0,
+          57.00105667114258
+        ],
+        [
+          14.998390197753906,
+          66.0,
+          120.99894714355469
+        ]
+      ],
+      "name": "thigh_outer_plate_left",
+      "volume_relative_error_vs_cad": 0.00014994137929981433
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 3342.830622617177,
+      "bounds_mm": [
+        [
+          -30.498994827270508,
+          39.0,
+          61.50065994262695
+        ],
+        [
+          10.498993873596191,
+          43.0,
+          116.49934387207031
+        ]
+      ],
+      "name": "thigh_inner_plate_left",
+      "volume_relative_error_vs_cad": 8.356810958149326e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 14042.543118902984,
+      "bounds_mm": [
+        [
+          -36.5,
+          39.5,
+          57.5
+        ],
+        [
+          -9.5,
+          62.5,
+          80.5
+        ]
+      ],
+      "name": "knee_servo_left",
+      "volume_relative_error_vs_cad": 3.673566400419976e-05
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2320.598932022777,
+      "bounds_mm": [
+        [
+          -28.498361587524414,
+          42.0,
+          20.50007438659668
+        ],
+        [
+          6.498362064361572,
+          46.0,
+          74.49992370605469
+        ]
+      ],
+      "name": "shin_outer_link_left",
+      "volume_relative_error_vs_cad": 3.7949097497030217e-05
+    },
+    {
+      "triangle_count": 1276,
+      "merged_vertex_count": 636,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 2320.598932022787,
+      "bounds_mm": [
+        [
+          -28.498361587524414,
+          30.0,
+          20.50007438659668
+        ],
+        [
+          6.498362064361572,
+          34.0,
+          74.49992370605469
+        ]
+      ],
+      "name": "shin_inner_link_left",
+      "volume_relative_error_vs_cad": 3.794909749271924e-05
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 15949.22100386122,
+      "bounds_mm": [
+        [
+          -11.0,
+          30.0,
+          15.5
+        ],
+        [
+          13.0,
+          55.0,
+          42.5
+        ]
+      ],
+      "name": "ankle_servo_left",
+      "volume_relative_error_vs_cad": 3.366798034054958e-05
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963380552919,
+      "bounds_mm": [
+        [
+          0.0003356945817358792,
+          34.5,
+          106.0013427734375
+        ],
+        [
+          5.999664306640625,
+          67.5,
+          112.0
+        ]
+      ],
+      "name": "joint_axle_left_0",
+      "volume_relative_error_vs_cad": 0.0005966027060715087
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.6799163288033,
+      "bounds_mm": [
+        [
+          -5.499048709869385,
+          64.75,
+          100.5038070678711
+        ],
+        [
+          11.499049186706543,
+          67.25,
+          117.5
+        ]
+      ],
+      "name": "joint_bearing_left_0",
+      "volume_relative_error_vs_cad": 0.0005957312112589751
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4963282022218,
+      "bounds_mm": [
+        [
+          -25.999664306640625,
+          34.5,
+          66.0013427734375
+        ],
+        [
+          -20.000335693359375,
+          67.5,
+          72.0
+        ]
+      ],
+      "name": "joint_axle_left_1",
+      "volume_relative_error_vs_cad": 0.0005966132661040925
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.6798932150717,
+      "bounds_mm": [
+        [
+          -31.499048233032227,
+          64.75,
+          60.50380325317383
+        ],
+        [
+          -14.500950813293457,
+          67.25,
+          77.5
+        ]
+      ],
+      "name": "joint_bearing_left_1",
+      "volume_relative_error_vs_cad": 0.0005957781929665669
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 932.4962186812503,
+      "bounds_mm": [
+        [
+          -1.999664306640625,
+          26.0,
+          23.0013427734375
+        ],
+        [
+          3.999664306640625,
+          59.0,
+          29.0
+        ]
+      ],
+      "name": "joint_axle_left_2",
+      "volume_relative_error_vs_cad": 0.0005967306452577715
+    },
+    {
+      "triangle_count": 840,
+      "merged_vertex_count": 420,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 491.67984392519065,
+      "bounds_mm": [
+        [
+          -7.499048709869385,
+          53.75,
+          17.50380516052246
+        ],
+        [
+          9.499049186706543,
+          56.25,
+          34.5
+        ]
+      ],
+      "name": "joint_bearing_left_2",
+      "volume_relative_error_vs_cad": 0.0005958783811496977
+    },
+    {
+      "triangle_count": 6620,
+      "merged_vertex_count": 3312,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 10365.81242556027,
+      "bounds_mm": [
+        [
+          -20.0,
+          22.5,
+          0.0
+        ],
+        [
+          34.0,
+          62.5,
+          5.0
+        ]
+      ],
+      "name": "foot_sole_left",
+      "volume_relative_error_vs_cad": 8.928309365286693e-05
+    },
+    {
+      "triangle_count": 8224,
+      "merged_vertex_count": 4106,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 26454.034985593535,
+      "bounds_mm": [
+        [
+          -20.0,
+          22.5,
+          4.0
+        ],
+        [
+          34.0,
+          62.5,
+          34.998722076416016
+        ]
+      ],
+      "name": "orange_foot_left",
+      "volume_relative_error_vs_cad": 0.00015178799097729533
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 11.334382164992311,
+      "bounds_mm": [
+        [
+          22.10085105895996,
+          29.60021209716797,
+          15.399999618530273
+        ],
+        [
+          25.899999618530273,
+          33.39978790283203,
+          16.399999618530273
+        ]
+      ],
+      "name": "foot_deck_screw_left_31",
+      "volume_relative_error_vs_cad": 0.0005835318761739
+    },
+    {
+      "triangle_count": 416,
+      "merged_vertex_count": 210,
+      "merge_tolerance_mm": 1e-05,
+      "degenerate_triangle_count": 0,
+      "boundary_edge_count": 0,
+      "nonmanifold_edge_count": 0,
+      "inconsistent_edge_winding_count": 0,
+      "reversed_stored_normal_count": 0,
+      "watertight_after_ignoring_degenerate_triangles": true,
+      "positive_oriented_volume": true,
+      "signed_volume_mm3": 11.334381551037987,
+      "bounds_mm": [
+        [
+          22.10085105895996,
+          51.60021209716797,
+          15.399999618530273
+        ],
+        [
+          25.899999618530273,
+          55.39978790283203,
+          16.399999618530273
+        ]
+      ],
+      "name": "foot_deck_screw_left_53",
+      "volume_relative_error_vs_cad": 0.0005835860119929482
+    }
+  ],
+  "limitations": "Visual concept only; fit, hardware compatibility, articulation and self-intersections are not validated by these checks."
+}
