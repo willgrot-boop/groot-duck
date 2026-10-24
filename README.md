@@ -82,6 +82,11 @@ regenerated or adapted to eight low-cost servos. Do not print it expecting
 working mounts, link lengths, suitable mass or calibrated joints.
 See [the CAD documentation](docs/cad-model.md) and [hardware notes](hardware/README.md).
 
+For illustrated component placement, mechanical dry-fit steps and exact
+wiring diagrams, open the [four-sheet build guide](docs/build-guide/README.md)
+or [printable PDF](docs/build-guide/microduck-build-guide.pdf). Its mechanical
+illustrations are proposed layouts, not verified eight-servo mounting plans.
+
 ## Control boundaries
 
 - **Pi:** future camera, microphone/speech, speaker and cloud adapters. The
